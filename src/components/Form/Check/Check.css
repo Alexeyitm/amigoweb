@@ -22,4 +22,9 @@
 .check__link {
   color: #0880AE;
   text-decoration: none;
+  transition: all .5s ease;
+}
+
+.check__link:hover {
+  opacity: .8;
 }

@@ -14,8 +14,19 @@
   color: #2C2738;
 }
 
-.title__link-sign-in {
+.title__link {
   margin-left: 6px;
   color: #0880AE;
   text-decoration: none;
+}
+
+.title__link:hover {
+  margin-left: 6px;
+  color: #0880AE;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.title__link:hover {
+  opacity: .8;
 }
