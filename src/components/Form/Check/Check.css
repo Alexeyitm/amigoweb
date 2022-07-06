@@ -1,0 +1,25 @@
+.check {
+  margin-top: 31px;
+  display: flex;
+}
+
+.check__checkbox {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+
+.check__label {
+  margin: 4px 0 0 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #756F86;
+  height: max-content;
+}
+
+.check__link {
+  color: #0880AE;
+  text-decoration: none;
+}

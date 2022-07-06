@@ -1,7 +1,7 @@
 {
   "name": "amigoweb",
   "version": "0.1.0",
-  "homepage": "https://alexeyitm.github.io/amigoweb",  
+  "homepage": "https://alexeyitm.github.io/amigoweb",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.30.1",
     "gh-pages": "^4.0.0"
   }
 }
