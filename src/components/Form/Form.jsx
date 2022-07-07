@@ -11,9 +11,9 @@ function Form({ isName, setIsName, isEmail, setIsEmail, isPhone, setIsPhone,
   return (
     <form className="form">
       <Title title="Регистрация" subtitle="Уже есть аккаунт?" textLink="Войти" />
-      <Input name="Имя" placeholder="Введите Ваше имя" input={isName} setInput={setIsName}/>
-      <Input name="Email" placeholder="Введите Ваш email" input={isEmail} setInput={setIsEmail}/>
-      <Input name="Номер телефона" placeholder="Введите номер телефона" input={isPhone} setInput={setIsPhone}/>
+      <Input type="text" name="Имя" placeholder="Введите Ваше имя" input={isName} setInput={setIsName}/>
+      <Input type="email" name="Email" placeholder="Введите Ваш email" input={isEmail} setInput={setIsEmail}/>
+      <Input type="number" name="Номер телефона" placeholder="Введите номер телефона" input={isPhone} setInput={setIsPhone}/>
       <Select isLanguage={isLanguage} setIsLanguage={setIsLanguage}/>
       <Check isCheck={isCheck} setIsCheck={setIsCheck}/>
       <Button />
