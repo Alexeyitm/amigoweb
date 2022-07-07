@@ -7,8 +7,41 @@
   width: 28px;
   height: 28px;
   cursor: pointer;
+  position: relative;
 }
 
+.check__checkbox::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 1px solid #DBE2EA;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+  border-radius: 4px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.check__checkbox::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border-radius: 4px;
+  border: 2px solid #0880AE;
+  background: url(./../../../images/Mask.svg) no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.check__checkbox_active::after {
+  display: block;
+}
 
 .check__label {
   margin: 4px 0 0 8px;
