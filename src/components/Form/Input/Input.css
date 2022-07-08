@@ -37,3 +37,17 @@
   border: 2px solid #0880AE;
   padding: 15px 15px 14px;
 }
+
+.input__error {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FF7171;
+  position: absolute;
+  margin-top: 88px;
+}
+
+.input__error_hidden {
+  display: none;
+}
+
