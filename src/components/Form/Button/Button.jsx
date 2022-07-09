@@ -1,7 +1,6 @@
 import React from 'react';
 import './Button.css';
 
-
 function Button({ isFormValid }) {
 
   const handleSubmit = (e) => {
