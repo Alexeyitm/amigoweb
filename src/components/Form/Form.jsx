@@ -6,8 +6,9 @@ import Select from './Select/Select';
 import Check from './Check/Check';
 import Button from './Button/Button';
 
-function Form({ isName, setIsName, isNameValid, isEmail, setIsEmail, isEmailValid, 
-  isPhone, setIsPhone, isPhoneValid, isLanguage, setIsLanguage, isCheck, setIsCheck }) {
+function Form({ isName, setIsName, isNameValid, isEmail, setIsEmail, isEmailValid, isPhone, setIsPhone, 
+  isPhoneValid, isLanguage, setIsLanguage, isCheck, setIsCheck, isInputsValid, isFormValid, setIsFormValid }) {
+
   return (
     <form className="form">
       <Title 
@@ -42,9 +43,18 @@ function Form({ isName, setIsName, isNameValid, isEmail, setIsEmail, isEmailVali
         valid={isPhoneValid}
         textValid="Введен некорректный номер телефона"
       />
-      <Select isLanguage={isLanguage} setIsLanguage={setIsLanguage}/>
-      <Check isCheck={isCheck} setIsCheck={setIsCheck}/>
-      <Button />
+      <Select
+        isLanguage={isLanguage}
+        setIsLanguage={setIsLanguage}
+      />
+      <Check
+        isCheck={isCheck}
+        setIsCheck={setIsCheck}
+        isInputsValid={isInputsValid}
+        isFormValid={isFormValid}
+        setIsFormValid={setIsFormValid}
+      />
+      <Button isFormValid={isFormValid}/>
     </form>
   );
 }
