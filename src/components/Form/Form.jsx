@@ -54,7 +54,7 @@ function Form({ isName, setIsName, isNameValid, isEmail, setIsEmail, isEmailVali
         isFormValid={isFormValid}
         setIsFormValid={setIsFormValid}
       />
-      <Button isFormValid={isFormValid}/>
+      <Button isFormValid={isFormValid} isInputsValid={isInputsValid}/>
     </form>
   );
 }

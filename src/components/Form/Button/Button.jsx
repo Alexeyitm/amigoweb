@@ -1,14 +1,14 @@
 import React from 'react';
 import './Button.css';
 
-function Button({ isFormValid }) {
+function Button({ isFormValid, isInputsValid }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
   }
   
   return (
-    <button className={"button " + (isFormValid && "button_active")} type="submit" onClick={handleSubmit}>Зарегистрироваться</button>
+    <button className={"button " + (isInputsValid && isFormValid && "button_active")} type="submit" onClick={handleSubmit}>Зарегистрироваться</button>
   );
 }
 
